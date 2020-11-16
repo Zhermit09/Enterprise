@@ -16,47 +16,72 @@ header {
 }
 
 header img {
-  max-height: 6rem;
+  height: 4rem;
   border: black solid 0px 0px;
   border-radius: 150px;
   background-color: white;
-  margin: 0px;
+  margin: 7px;
 }
 
 h1 {
   font-family: "Grenze Gotisch";
   color: rgb(236, 204, 21);
-  text-align: center;
-  font-size: 6rem;
+  font-size: 4rem;
   margin: 0px;
   text-shadow: rgb(168, 109, 0) 2px 2px 0px;
+  line-height: 100%;
 }
 
-main{
-   margin:0px;
-   padding: 0px;
+main {
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  padding: 0px;
 }
 
-main>img {
-    width: 10%;
-    position: fixed;
-    top: 182px;
-    left: 19.45%;
-    z-index: 1;
+.new > img {
+  width: 10%;
+  position: fixed;
+  top: 18.75%;
+  left: 19.45%;
+  z-index: 1;
 }
 
 main .imgCont img {
-    position: fixed;
-    top: 20%;
-    left: 20%;
-    width:60%;
-    border: white solid 10px;
-    box-shadow: orange 0px 1px 20px;
-    border-radius: 10px;
-    
+  position: fixed;
+  top: 20%;
+  left: 20%;
+  width: 60%;
+  border: white solid 10px;
+  box-shadow: orange 0px 1px 20px;
+  border-radius: 10px;
 }
 
-.imgCont{
-    display: flex;
-    justify-content: center;
+.imgCont {
+  display: flex;
+  justify-content: center;
+}
+
+.adds {
+  margin: 10px;
+  display: flex;
+  position: relative;
+  width: 60%;
+  
+}
+
+.adds > img {
+  width: 100%;
+  border: solid white 5px;
+  border-radius: 10px;
+
+}
+
+.adds > .new {
+  width: 10%;
+  position: absolute;
+  top: -1%;
+  left: -0.5%;
+  border: black solid 0px;
+
 }
