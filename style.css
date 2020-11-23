@@ -4,33 +4,95 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #141414;
+  background: rgb(255, 196, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 196, 0, 1) 0%,
+    rgb(238, 218, 0, 1) 4%,
+    rgba(191, 149, 63, 1) 8%,
+    rgba(20, 20, 20, 1) 12%,
+    rgba(20, 20, 20, 1) 88%,
+    rgba(191, 149, 63, 1) 92%,
+    rgba(238, 218, 0, 1) 96%,
+    rgba(255, 196, 0, 1) 100%
+  );
   padding: 0%;
   margin: 0%;
+}
+
+body {
+  margin: 0%;
+  padding: 0%;
 }
 
 header {
   display: flex;
   align-content: center;
   justify-content: center;
+  background-color: black;
+  border-bottom: orange 3px solid;
 }
 
 header img {
   height: 4rem;
-  border: rgb(236, 204, 21) solid 2px;
-  border-radius: 150px;
-  background-color: white;
+  border: gold solid 2px;
+  border-radius: 100%;
+  background-image: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
   margin: 7px;
 }
 
 h1 {
   font-family: "Grenze Gotisch";
-  color: rgb(236, 204, 21);
-  font-size: 6rem;
+  background: linear-gradient(
+    to right,
+    #bf953f,
+    #fcf6ba,
+    #b38728,
+    #fbf5b7,
+    #aa771c
+  );
+  font-size: 4rem;
   margin: 0px;
   padding: 0%;
-  text-shadow: rgb(168, 109, 0) 2px 2px 0px;
-  line-height: 70%;
+  line-height: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: text-animation-rev 0.5s ease forwards;
+}
+h1:hover {
+  animation: text-animation 0.5s ease-in forwards;
+}
+
+@keyframes text-animation-rev {
+  0% {
+    background-size: 650%;
+  }
+  40% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 100%;
+  }
+}
+
+@keyframes text-animation {
+  0% {
+    background-size: 100%;
+  }
+  80% {
+    background-size: 650%;
+  }
+  100% {
+    background-size: 650%;
+  }
 }
 
 main {
@@ -58,8 +120,8 @@ main {
   margin: 10px;
   display: flex;
   position: relative;
-  width: 60%;
-  margin-top: 3%;
+  width: 65%;
+  margin-top: 2.7%;
 }
 
 .adds > img {
@@ -78,68 +140,62 @@ main {
   z-index: 2;
 }
 
-.text {
-  width: 31%;
-  position: absolute;
-  left: 70%;
-  top: 20%;
-}
-
-.date {
-  width: 31%;
-  position: absolute;
-  left: 35%;
-  top: 90%;
-}
-
-.text > b {
-  font-family: "Crimson Text";
-  font-size: 4rem;
-  text-align: center;
-  color: red;
-  margin: 0%;
-}
-
-.date > p {
-  color: rgb(85, 170, 207);
-  text-shadow: rgb(0, 0, 0) 0px 1px 1px;
-  font-size: 2.7rem;
-  text-align: center;
-  font-family: "Crimson text";
-  margin: 0%;
-}
-
 .tanjiro > img {
   position: absolute;
-  right: -28.7%;
-  bottom: -10%;
-  width: 42%;
+  left: 87.2%;
+  bottom: -17.2%;
+  width: 39.7%;
   border: solid black 0px;
-  border-radius: 0% 0% 10% 0%;
   z-index: 1;
-  
 }
 
 .links {
-  width: 40%;
+  width: 50%;
   display: flex;
   justify-content: space-evenly;
+  margin-bottom: 2%;
 }
 
 .links > a {
   text-decoration: none;
-  color: orange;
+  background: linear-gradient(
+    -72deg,
+    #ffde45,
+    #ffffff 16%,
+    #ffde45 21%,
+    #ffffff 24%,
+    #452100 27%,
+    #ffde45 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #ffde45 72%,
+    #ffffff 80%,
+    #ffde45 84%,
+    #452100
+  );
+  animation: text-animation-rev 0.3s ease forwards;
+  color: black;
   font-size: 2rem;
-  background-color: #444444;
+  background-color: #111;
   border: solid gold 1px;
-  border-radius: 40px;
+  border-radius: 4px;
+  box-shadow: coral 0px 0px 15px;
   padding: 0px 5px 0px 5px;
-  margin-top: 7%;
+  margin-top: 4.7%;
+}
+.links > a:hover {
+  animation: text-animation 0.3s ease-in forwards;
 }
 
 footer {
-  background-color: gray;
-  margin-top: 3.5%;
+  border-top: orange 3px solid;
+  background-color: black;
+  margin-top: 0%;
+  color: orange;
+}
+
+footer > ul {
+  margin: 0%;
 }
 
 .button > img {
@@ -157,24 +213,59 @@ footer {
   width: 100%;
 }
 
-.play>button{
+.play > button {
   position: absolute;
-  left: 6px;
-  bottom: 6px;
+  
+  background:
+  -webkit-linear-gradient(
+    132deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 29%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
+  );
+  color: aqua;
+  left: 7px;
+  bottom: 7px;
   padding: 0%;
   margin: 0%;
-  width: 23px;
-  height: 21px;
+  width: 40px;
+  height: 40px;
   z-index: 1;
 }
 
-.pause>button{
+.pause > button {
   position: absolute;
-  left: 6px;
-  bottom: 6px;
+   background:
+  -webkit-linear-gradient(
+    132deg,
+    #dedeff,
+    #ffffff 16%,
+    #dedeff 21%,
+    #ffffff 24%,
+    #555564 29%,
+    #dedeff 36%,
+    #ffffff 45%,
+    #ffffff 60%,
+    #dedeff 72%,
+    #ffffff 80%,
+    #dedeff 84%,
+    #555564
+  );
+  color: aqua;
+  left: 7px;
+  bottom: 7px;
   padding: 0%;
   margin: 0%;
-  width: 23px;
-  height: 21px;
+  width: 40px;
+  height: 40px;
   z-index: -1;
 }
