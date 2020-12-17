@@ -215,15 +215,14 @@ footer > ul {
 
 .play > button {
   position: absolute;
-  
-  background:
-  -webkit-linear-gradient(
+
+  background: -webkit-linear-gradient(
     132deg,
     #dedeff,
     #ffffff 16%,
     #dedeff 21%,
     #ffffff 24%,
-    #555564 29%,
+    #a4a4a7 29%,
     #dedeff 36%,
     #ffffff 45%,
     #ffffff 60%,
@@ -244,14 +243,13 @@ footer > ul {
 
 .pause > button {
   position: absolute;
-   background:
-  -webkit-linear-gradient(
+  background: -webkit-linear-gradient(
     132deg,
     #dedeff,
     #ffffff 16%,
     #dedeff 21%,
     #ffffff 24%,
-    #555564 29%,
+    #a4a4a7 29%,
     #dedeff 36%,
     #ffffff 45%,
     #ffffff 60%,
